@@ -33,6 +33,7 @@
     @media(max-width:760px){.own-share-actions{width:100%}.own-share-actions button{width:100%}}
     @media(max-width:600px){.duel-buttons{flex-direction:column}.duel-buttons button{width:100%}}
     .share-word-form{display:grid;gap:6px}.share-word-form .field-label:not(:first-child){margin-top:9px}.share-word-form .duel-buttons{margin-top:8px}.share-draft-actions{display:flex;gap:14px;margin-top:6px}.share-draft-actions .text-button{margin-top:0}
+    .quick-own-form{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:14px}.quick-own-row{display:flex;gap:9px;align-items:stretch}.quick-own-row .text-input{flex:1;min-width:0}.quick-add-button{width:52px;min-width:52px;min-height:50px;border-radius:11px;background:#14754d;color:white;font-size:33px;font-weight:400;line-height:1}.quick-add-button:hover{background:#0f6240}.quick-own-share{margin-top:10px}.quick-own-form .form-status:empty{display:none}.quick-own-form .text-button{margin-top:4px}
     @media(max-width:600px){.game-banner{align-items:stretch;flex-direction:column;padding:15px}.game-banner .primary-button{width:100%}.game-options{grid-template-columns:minmax(0,1fr)}.game-button-row{flex-direction:column}.game-button-row button{width:100%}}
     .progress-breakdown{border-top:1px solid #ffffff4d;margin-top:17px;padding-top:13px;display:grid;gap:7px}.progress-breakdown div{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#e3eaff}.progress-breakdown strong{color:white;font-variant-numeric:tabular-nums}.review-limit{font-size:13px;color:var(--muted);margin-top:10px}.mini-body{text-align:center}.mini-prompt{font:500 48px/1.2 Georgia,serif;margin:18px 0 8px}.mini-prompt.word{font-size:35px}.mini-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}.mini-options button{border:1px solid var(--line);border-radius:10px;background:white;padding:10px;min-height:52px}.mini-options button:disabled{opacity:1}.mini-options button.correct{border-color:#5baa78;background:var(--green-bg);color:var(--green)}.mini-options button.incorrect{border-color:#d49a94;background:#fff1ef;color:#9b2d26}.mini-feedback{margin-top:18px!important;color:var(--ink)!important;min-height:25px}.mini-body .primary-button{margin-top:16px}.mini-context{font-size:14px;color:var(--muted)}@media(max-width:760px){.sidebar .mini-panel{grid-column:1/-1}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -48,6 +49,28 @@
     .catalog-heading{gap:10px;margin-bottom:16px}.filters{margin-bottom:13px}.filter-row{justify-content:flex-start}.filter-buttons{width:100%}.filter-button{flex:1;min-width:0;min-height:44px;padding:7px 4px;font-size:12px;white-space:normal;overflow-wrap:anywhere}.result-count{margin-right:auto}.catalog-more{max-width:none}.sidebar{grid-template-columns:minmax(0,1fr)}.progress-panel,.sidebar .review-panel,.sidebar .mini-panel{grid-column:1}.footer{font-size:12px}.own-form,section[role="tabpanel"]{scroll-margin-top:74px}
   }
   @media(max-width:360px){.shell{padding-left:12px;padding-right:12px}.topbar-inner{padding-left:12px;padding-right:12px}.tab{font-size:11px}.brand-caption{max-width:125px}}
+  :root[data-theme="dark"]{color-scheme:dark;--blue:#a4b9ff;--blue-dark:#8da7ff;--ink:#eef2fc;--muted:#afbdd4;--line:#3b485f;--paper:#202b3d;--bg:#141e2d;--green:#83dfab;--green-bg:#213d34;--yellow:#ffdf80}
+  [data-theme="dark"] .brand-icon,[data-theme="dark"] .primary-button{background:#3d5fcf;color:#fff}
+  [data-theme="dark"] .progress-panel{background:#29417f}
+  [data-theme="dark"] .side-panel,[data-theme="dark"] .own-form,[data-theme="dark"] .direction-panel,[data-theme="dark"] .icon-button,[data-theme="dark"] .qr-button,[data-theme="dark"] .secondary-button,[data-theme="dark"] .speak,[data-theme="dark"] .learn-button,[data-theme="dark"] .favorite-button,[data-theme="dark"] .own-card-actions button,[data-theme="dark"] .empty-state,[data-theme="dark"] dialog,[data-theme="dark"] .game-option,[data-theme="dark"] .mini-options button,[data-theme="dark"] .duel-picker,[data-theme="dark"] .qr-stage,[data-theme="dark"] .skip{background:var(--paper);color:var(--ink)}
+  [data-theme="dark"] .text-input,[data-theme="dark"] .search-field input,[data-theme="dark"] .filters select,[data-theme="dark"] .game-form select,[data-theme="dark"] .game-form input,[data-theme="dark"] .game-code-input,[data-theme="dark"] .duel-code,[data-theme="dark"] .transfer-link{background:#172234;color:var(--ink);border-color:var(--line)}
+  [data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#98a9c3}
+  [data-theme="dark"] .tab-count,[data-theme="dark"] .filter-buttons{background:#2b3850}
+  [data-theme="dark"] .dot,[data-theme="dark"] .catalog-progress .progress-track{background:#485773}
+  [data-theme="dark"] .tab[aria-selected="true"] .tab-count,[data-theme="dark"] .filter-button[aria-pressed="true"],[data-theme="dark"] .reveal,[data-theme="dark"] .game-code-box,[data-theme="dark"] .game-banner,[data-theme="dark"] .transfer-notice,[data-theme="dark"] .modal-body .guide-note{background:#2b3b5b;color:var(--ink);border-color:#4a6190}
+  [data-theme="dark"] .daily-review,[data-theme="dark"] .word-card.needs-practice,[data-theme="dark"] .confirm-box{background:#3b3323;border-color:#735d30;color:var(--ink)}
+  [data-theme="dark"] .word-card.learned,[data-theme="dark"] .game-option.correct,[data-theme="dark"] .mini-options button.correct{background:var(--green-bg);border-color:#4a9d6f;color:var(--ink)}
+  [data-theme="dark"] .game-option.incorrect,[data-theme="dark"] .mini-options button.incorrect,[data-theme="dark"] .danger-button{background:#462b2c;border-color:#875358;color:#ffbbb3}
+  [data-theme="dark"] .card-status{background:#2c5942;color:#b6f1cd}
+  [data-theme="dark"] .needs-practice .card-status,[data-theme="dark"] .favorite-button[aria-pressed="true"],[data-theme="dark"] .review-tag{background:#62502d;color:#ffe19b;border-color:#977b3b}
+  [data-theme="dark"] .learned .learn-button{background:#294d3b;border-color:#4a9d6f;color:var(--green)}
+  [data-theme="dark"] .pronunciation,[data-theme="dark"] .number,[data-theme="dark"] .favorite-button,[data-theme="dark"] .game-option-reading{color:var(--muted)}
+  [data-theme="dark"] .article-der{color:#a4b9ff}[data-theme="dark"] .article-die{color:#f1a5e5}[data-theme="dark"] .article-das{color:#83dfab}
+  [data-theme="dark"] .toast{background:#dbe5ff;color:#142033}
+  [data-theme="dark"] .storage-warning{background:#4b3d22;border-color:#927338;color:#ffe3a5}
+  [data-theme="dark"] .noscript{background:#4b3d22;border-color:#927338;color:#ffe3a5}
+  [data-theme="dark"] .quick-add-button{background:#217a54;color:#fff}[data-theme="dark"] .quick-add-button:hover{background:#2a9266}
+  #theme-icon{font-size:23px;line-height:1}
   </style>
 </head>
 <body>
@@ -55,7 +78,7 @@
 <noscript><p class="noscript">Bitte aktiviere JavaScript, um die Wörter und deinen Lernfortschritt zu sehen.</p></noscript>
 <header class="topbar"><div class="topbar-inner">
   <div class="brand"><span class="brand-icon" lang="uk" aria-hidden="true">м</span><div><div class="brand-name">mova<span style="color:var(--blue)">.</span></div><div class="brand-caption" id="brand-caption">Dein Ukrainisch für den Alltag</div></div></div>
-  <div class="top-actions"><span class="level-badge">Für deinen Anfang · A1</span><button class="qr-button" id="transfer-open" aria-label="Lernstand per QR-Code übertragen"><span class="desktop-label">Per QR übertragen</span><span class="phone-label" aria-hidden="true">QR</span></button><button class="icon-button" id="settings-button" aria-label="Einstellungen und Datensicherung" title="Einstellungen"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="white"/><circle cx="15" cy="17" r="3" fill="white"/></svg></button></div>
+  <div class="top-actions"><span class="level-badge">Für deinen Anfang · A1</span><button class="qr-button" id="transfer-open" aria-label="Lernstand per QR-Code übertragen"><span class="desktop-label">Per QR übertragen</span><span class="phone-label" aria-hidden="true">QR</span></button><button class="icon-button" id="theme-toggle" type="button" aria-label="Dunkelmodus einschalten" title="Dunkelmodus einschalten" aria-pressed="false"><span id="theme-icon" aria-hidden="true">☾</span></button><button class="icon-button" id="settings-button" aria-label="Einstellungen und Datensicherung" title="Einstellungen"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="white"/><circle cx="15" cy="17" r="3" fill="white"/></svg></button></div>
 </div></header>
 <main class="shell" id="main">
   <div class="intro"><div><p class="eyebrow">Ein kleiner Schritt, jeden Tag</p><h1 lang="uk" id="intro-title">Почнімо.</h1><p class="intro-copy" id="intro-copy">Fangen wir an. Fünf Wörter für deinen Alltag.</p></div><p class="date" id="date-label"></p></div>
@@ -99,6 +122,7 @@
   </section>
   <section id="panel-own" role="tabpanel" aria-labelledby="tab-own" hidden>
     <div class="catalog-heading saved-heading"><div><h2>Für mich wichtige Wörter</h2><p class="section-sub" id="own-subtitle">Dein persönlicher Wortschatz. Beginne mit dem deutschen Wort.</p></div><div class="own-share-actions"><button class="secondary-button" id="share-open">Neue Wörter an Partner senden</button><button class="primary-button" id="own-review-start" disabled>Meine Wörter üben</button></div></div>
+    <form class="quick-own-form" id="quick-own-form"><label class="field-label" for="quick-own-input" id="quick-own-label">Neues Wort zum Üben</label><div class="quick-own-row"><input class="text-input" id="quick-own-input" maxlength="120" autocomplete="off" required placeholder="Deutsches Wort eingeben"><button class="quick-add-button" id="quick-own-add" type="submit" aria-label="Wort zu Noch üben hinzufügen" title="Wort zu Noch üben hinzufügen">+</button></div><label class="check-label quick-own-share"><input type="checkbox" id="quick-own-share">Auch für die Partnerliste vormerken</label><p class="form-note" id="quick-own-note">Die App ergänzt die Übersetzung automatisch. Bei neuen Wörtern wird deine Eingabe dafür an MyMemory gesendet. Prüfe das Ergebnis bei Bedarf über „Übersetzung prüfen“.</p><p class="form-status" id="quick-own-status" role="status"></p><button class="text-button" id="quick-own-edit" type="button" hidden>Übersetzung prüfen</button></form>
     <form class="own-form" id="own-form"><label class="field-label" for="own-german" id="own-source-label">Deutsches Wort oder kurze Wendung</label><div class="entry-row"><input class="text-input" id="own-german" maxlength="120" required autocomplete="off" placeholder="Zum Beispiel: der Schlüssel"><button class="primary-button" id="translate-own" type="submit">Ukrainisch ergänzen</button></div><p class="form-note" id="own-service-note">Bekannte Wörter ergänzt die App direkt. Für neue Wörter wird nur deine deutsche Eingabe an <a href="https://mymemory.translated.net/" target="_blank" rel="noopener noreferrer">MyMemory</a> zur Online-Übersetzung gesendet. Das Ergebnis kannst du vor dem Speichern bearbeiten. Bei mehrdeutigen Wörtern hilft eine kurze Wendung, etwa „Hausschlüssel“.</p><p class="form-status" id="own-form-status" role="status"></p><button class="text-button" id="manual-own" type="button">Übersetzung selbst eintragen</button>
       <div class="entry-result" id="own-result" hidden><label class="field-label" for="own-ukrainian" id="own-target-label">Ukrainisch</label><input class="text-input" id="own-ukrainian" maxlength="180" lang="uk" autocomplete="off" placeholder="Українське слово"><label class="field-label" for="own-pronunciation">Aussprachehilfe (optional)</label><input class="text-input" id="own-pronunciation" maxlength="220" autocomplete="off" placeholder="Betonte Silbe GROSS schreiben"><p class="form-note" id="own-help-note">Bei neuen Übersetzungen zeigt die App eine vereinfachte Lesehilfe ohne bekannte Betonung. Du kannst die Betonung selbst ergänzen. 🔊 liest das ukrainische Wort vor.</p><div class="settings-actions"><button class="primary-button" id="save-own" type="button">In meine Liste aufnehmen</button><button class="secondary-button" id="cancel-own" type="button">Abbrechen</button></div><div class="confirm-box" id="own-delete-confirm" hidden><p>Dieses eigene Wort mit seiner Lernmarkierung und seinem Stern entfernen?</p><div class="settings-actions"><button class="danger-button" id="delete-own-confirm" type="button" style="margin-top:0">Wort entfernen</button><button class="secondary-button" id="delete-own-cancel" type="button">Abbrechen</button></div></div></div>
     </form>
@@ -369,6 +393,9 @@ const uiTranslations={
  'Ungültiges Wort in der Übertragung.':'Некоректне слово в передачі.','Ungültige eigene Wörter.':'Некоректні власні слова.','Ungültige Lernmarkierungen.':'Некоректний прогрес.','Ungültige Tageslektion.':'Некоректний урок.','Ungültiger zweiter Lernstand.':'Некоректний прогрес другої мови.','Ungültige Übertragungsdaten.':'Некоректні дані передачі.','Ungültiger QR-Teil.':'Некоректна частина QR-коду.'
 };
 Object.assign(uiTranslations,{
+  'Dunkelmodus einschalten':'Увімкнути темну тему','Hellmodus einschalten':'Увімкнути світлу тему',
+  'Neues Wort zum Üben':'Нове слово для повторення','Deutsches Wort eingeben':'Введи німецьке слово','Wort zu Noch üben hinzufügen':'Додати слово до «Ще потренуватися»','Auch für die Partnerliste vormerken':'Також додати до списку для партнера','Übersetzung prüfen':'Перевірити переклад',
+  'Die App ergänzt die Übersetzung automatisch. Bei neuen Wörtern wird deine Eingabe dafür an MyMemory gesendet. Prüfe das Ergebnis bei Bedarf über „Übersetzung prüfen“.':'Застосунок автоматично додає переклад. Для нових слів твій текст надсилається до MyMemory. За потреби перевір результат через «Перевірити переклад».',
   'Schwer':'Складно','Gut':'Добре','Leicht':'Легко','Schwere nochmal':'Повторити складні',
   'Schwere Wörter kommen morgen wieder. Gute und leichte Antworten erscheinen später erneut.':'Складні слова повернуться завтра. Добрі та легкі відповіді з’являться пізніше.',
   'Mini-Übung schließen':'Закрити міні-вправу','Wörter im Lernplan':'Слова в навчанні',
@@ -425,6 +452,7 @@ function captureStaticUI(){
 }
 function renderLocale(){
  for(const item of staticUIText){const value=t(item.text);if(item.node)item.node.nodeValue=learnsGerman()?item.original.replace(item.text,value):item.original;else item.element.setAttribute(item.attr,value);}
+ applyTheme(themeMode);
  document.documentElement.lang=interfaceLang();document.title=learnsGerman()?'mova · Вивчай німецьку':'mova · Ukrainisch lernen';
  $('learning-direction').value=state.settings.direction;
  $('brand-caption').textContent=t(learnsGerman()?'Твоя німецька на щодень':'Dein Ukrainisch für den Alltag');
@@ -433,6 +461,7 @@ function renderLocale(){
  $('direction-note').textContent=t(learnsGerman()?'Окремий прогрес для кожної мови · Спільні зірочки та власні слова.':'Getrennter Lernstand je Sprache · Merkliste und eigene Wörter gemeinsam.');
  $('swap-direction').setAttribute('aria-label',t('Sprachen tauschen'));
  $('own-subtitle').textContent=t(learnsGerman()?'Твій особистий словник. Почни з українського слова.':'Dein persönlicher Wortschatz. Beginne mit dem deutschen Wort.');
+ $('quick-own-input').placeholder=learnsGerman()?'Введи українське слово':'Deutsches Wort eingeben';
  $('own-source-label').textContent=t(learnsGerman()?'Українське слово або короткий вислів':'Deutsches Wort oder kurze Wendung');
  $('own-target-label').textContent=t(learnsGerman()?'Німецькою':'Ukrainisch');
  $('own-german').placeholder=learnsGerman()?'Наприклад: ключ від дому':'Zum Beispiel: der Schlüssel';$('own-german').lang=interfaceLang();$('own-german').maxLength=learnsGerman()?180:120;
@@ -448,7 +477,7 @@ function renderLocale(){
 }
 function changeDirection(direction){
  if(!['de-uk','uk-de'].includes(direction)||direction===state.settings.direction)return;
-  stopSpeech();for(const id of ['review-dialog','game-dialog','duel-dialog','share-dialog','mini-dialog','transfer-dialog','settings-dialog','guide-dialog'])if($(id).open)$(id).close();review=null;gameSession=null;storeGameSession();mini=null;qrTransfer=null;$('transfer-output').hidden=true;revealed.clear();resetOwnForm();
+  stopSpeech();for(const id of ['review-dialog','game-dialog','duel-dialog','share-dialog','mini-dialog','transfer-dialog','settings-dialog','guide-dialog'])if($(id).open)$(id).close();review=null;gameSession=null;storeGameSession();mini=null;qrTransfer=null;$('transfer-output').hidden=true;revealed.clear();cancelQuickOwn();resetOwnForm();
  state.settings.direction=direction;duelData=duelLoad();duelView='setup';shareState=shareLoad();currentFilter='all';ownFilter='all';catalogVisible=24;$('word-search').value='';$('saved-search').value='';$('own-search').value='';$('category-filter').value='';
  for(const button of document.querySelectorAll('[data-filter]'))button.setAttribute('aria-pressed',String(button.dataset.filter==='all'));
  for(const button of document.querySelectorAll('[data-own-filter]'))button.setAttribute('aria-pressed',String(button.dataset.ownFilter==='all'));
@@ -459,6 +488,15 @@ function changeDirection(direction){
 const STORAGE_KEY = 'mova-ukrainisch-v1';
 const byWord = new Map(woerter.map((word, index) => [word.ukrainisch, {...word, index, id:word.ukrainisch}]));
 const $ = id => document.getElementById(id);
+const THEME_KEY='mova-theme-v1';
+let themeMode='light';try{themeMode=localStorage.getItem(THEME_KEY)==='dark'?'dark':'light';}catch{}
+function applyTheme(mode,persist=false){
+ themeMode=mode==='dark'?'dark':'light';document.documentElement.dataset.theme=themeMode;
+ const dark=themeMode==='dark',label=learnsGerman()?(dark?'Увімкнути світлу тему':'Увімкнути темну тему'):(dark?'Hellmodus einschalten':'Dunkelmodus einschalten');
+ $('theme-toggle').setAttribute('aria-label',label);$('theme-toggle').title=label;$('theme-toggle').setAttribute('aria-pressed',String(dark));$('theme-icon').textContent=dark?'☀':'☾';
+ document.querySelector('meta[name="theme-color"]').content=dark?'#141e2d':'#244cda';
+ if(persist)try{localStorage.setItem(THEME_KEY,themeMode);}catch{}
+}
 const dayKey = (date = new Date()) => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
 const afterDays = (key, days) => { const [y,m,d] = key.split('-').map(Number); return dayKey(new Date(y,m-1,d+days,12)); };
 const nextChangeTime = (...times) => Math.max(Date.now(),...times.map(time=>(time||0)+1));
@@ -469,7 +507,7 @@ const freshState = () => ({version:1,learned:{},practice:{},favorites:[],favorit
 let storageProblem = '', pendingImport = null, toastTimer, speechSequence=0, activeSpeechButton=null;
 let currentFilter = 'all', ownFilter = 'all', activeTab = 'today', revealed = new Set(), review = null, mini = null, catalogVisible = 24, catalogPracticeIds = [], ownPracticeIds = [];
 const mobileCatalogMedia = window.matchMedia('(max-width:600px)');
-let editingOwn=null, translationController=null, translationToken=0, qrTransfer=null, incomingQRMemory=null;
+let editingOwn=null, translationController=null, translationToken=0, quickOwnController=null, quickOwnToken=0, quickPendingShare=null, quickEditId=null, qrTransfer=null, incomingQRMemory=null;
 function cleanState(raw){
   if(!raw || typeof raw!=='object' || raw.version!==1 || !raw.learned || typeof raw.learned!=='object' || Array.isArray(raw.learned))throw new Error('Ungültige Sicherung');
   const clean=freshState();
@@ -524,6 +562,7 @@ function loadState(){
   catch{storageProblem='Dein Browser erlaubt hier kein dauerhaftes Speichern. Der Fortschritt bleibt in dieser Sitzung; sichere ihn über die Einstellungen.';return freshState();}
 }
 let state=loadState();
+applyTheme(themeMode);
 function refreshWords(){byWord.clear();woerter.forEach((word,index)=>byWord.set(word.ukrainisch,{...word,index,id:word.ukrainisch}));state.customWords.forEach((word,index)=>byWord.set(word.id,{...word,index:woerter.length+index}));}
 function allWords(){return [...byWord.values()];}
 function baseLearnedCount(){return woerter.filter(w=>progress().learned[w.ukrainisch]).length;}
@@ -873,7 +912,7 @@ function duelStart(){const challenge=duelData.incoming;if(!challenge||challenge.
 const SHARE_KEY='mova-shared-practice-v1';
 const shareFresh=()=>({draftItems:[],outgoing:'',receivedIds:[],imported:[]});
 function shareStorageKey(){return SHARE_KEY+'-'+gameRole();}
-function shareCleanDraft(item){if(!item||typeof item!=='object')return null;const de=String(item.de||'').trim(),uk=String(item.uk||'').trim(),reading=String(item.reading||'').trim();return de&&de.length<=120&&uk&&uk.length<=120&&/[А-Яа-яІіЇїЄєҐґ]/u.test(uk)&&reading.length<=220?{de,uk,reading,readingDe:''}:null;}
+function shareCleanDraft(item){if(!item||typeof item!=='object')return null;const de=String(item.de||'').trim(),uk=String(item.uk||'').trim(),reading=String(item.reading||'').trim(),readingDe=String(item.readingDe||'').trim();return de&&de.length<=120&&uk&&uk.length<=120&&/[А-Яа-яІіЇїЄєҐґ]/u.test(uk)&&reading.length<=220&&readingDe.length<=220?{de,uk,reading,readingDe}:null;}
 function shareLoad(){try{const saved=JSON.parse(localStorage.getItem(shareStorageKey())||'null');if(!saved||typeof saved!=='object')return shareFresh();return {draftItems:Array.isArray(saved.draftItems)?saved.draftItems.map(shareCleanDraft).filter(Boolean).slice(0,20):[],outgoing:typeof saved.outgoing==='string'&&saved.outgoing.length<=36000?saved.outgoing:'',receivedIds:Array.isArray(saved.receivedIds)?[...new Set(saved.receivedIds.filter(id=>typeof id==='string'))]:[],imported:Array.isArray(saved.imported)?[...new Set(saved.imported.filter(id=>typeof id==='string'))]:[]};}catch{return shareFresh();}}
 let shareState=shareLoad(),shareEditingIndex=-1;
 function shareSave(){try{localStorage.setItem(shareStorageKey(),JSON.stringify(shareState));}catch{toast(learnsGerman()?'Не вдалося зберегти отримані слова.':'Die empfangenen Wörter konnten nicht dauerhaft gespeichert werden.');}}
@@ -902,6 +941,12 @@ function renderShare(){
   $('share-practice').disabled=practiceIds.length===0;
 }
 function shareRoomCode(){const bytes=new Uint8Array(6);if(window.crypto?.getRandomValues)window.crypto.getRandomValues(bytes);else for(let i=0;i<6;i++)bytes[i]=Math.floor(Math.random()*256);return Array.from(bytes,value=>GAME_ALPHABET[value%GAME_ALPHABET.length]).join('');}
+function queuePartnerDraft(word){
+  const item={de:germanWord(word),uk:word.ukrainisch,reading:word.aussprache||readingHelp(word.ukrainisch),readingDe:word.ausspracheDe||''};
+  if(shareState.draftItems.some(existing=>normalize(existing.de)===normalize(item.de)||normalize(existing.uk)===normalize(item.uk)))return 'exists';
+  if(shareState.draftItems.length>=20)return 'full';
+  shareState.draftItems.push(item);shareState.outgoing='';shareSave();return 'added';
+}
 function createSharedWords(){const items=shareState.draftItems.map(item=>({...item,reading:item.reading||readingHelp(item.uk)}));if(!items.length||items.length>20)throw new Error(learnsGerman()?'Введи від одного до 20 слів.':'Trage ein bis 20 Wörter ein.');if(new Set(items.map(item=>normalize(item.de))).size!==items.length||new Set(items.map(item=>normalize(item.uk))).size!==items.length)throw new Error(learnsGerman()?'Слова й відповіді мають бути різними.':'Wörter und Antworten müssen eindeutig sein.');shareState.outgoing=wordTransferPack(items,shareRoomCode(),duelTarget(),'MS1');shareSave();return items.length;}
 function acceptSharedWords(code){
   const pack=shareReadPack(code);
@@ -952,7 +997,7 @@ function makeWordId(){return 'custom_'+(globalThis.crypto?.randomUUID?crypto.ran
 function looseGerman(value){return normalize(value).replace(/\([^)]*\)/g,'').replace(/^(der|die|das)\s+/,'').trim();}
 function localTranslation(value){if(learnsGerman()){const key=normalize(value).trim();return allWords().find(w=>normalize(w.ukrainisch).trim()===key);}const key=looseGerman(value);return allWords().find(w=>w.deutsch.split('/').some(de=>looseGerman(de)===key));}
 function readingHelp(value){const sounds={'а':'a','б':'b','в':'w','г':'h','ґ':'g','д':'d','е':'e','є':'je','ж':'sh','з':'s','и':'i','і':'i','ї':'ji','й':'j','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'ss','т':'t','у':'u','ф':'f','х':'ch','ц':'z','ч':'tsch','ш':'sch','щ':'schtsch','ь':'','ю':'ju','я':'ja','’':'','\'':''};return Array.from(value.toLowerCase()).map(c=>sounds[c]??c).join('');}
-function resetOwnForm(){translationToken++;translationController?.abort();translationController=null;editingOwn=null;$('own-form').reset();$('own-result').hidden=true;$('own-delete-confirm').hidden=true;$('own-form-status').textContent=t('');$('translate-own').disabled=false;$('translate-own').textContent=t(learnsGerman()?'Додати німецький переклад':'Ukrainisch ergänzen');$('save-own').textContent=t('In meine Liste aufnehmen');}
+function resetOwnForm(){translationToken++;translationController?.abort();translationController=null;editingOwn=null;quickPendingShare=null;$('own-form').reset();$('own-result').hidden=true;$('own-delete-confirm').hidden=true;$('own-form-status').textContent=t('');$('translate-own').disabled=false;$('translate-own').textContent=t(learnsGerman()?'Додати німецький переклад':'Ukrainisch ergänzen');$('save-own').textContent=t('In meine Liste aufnehmen');}
 function showOwnResult(uk='',help=''){ $('own-ukrainian').value=uk;$('own-pronunciation').value=help;$('own-result').hidden=false;$('own-delete-confirm').hidden=true;$('own-ukrainian').focus(); }
 async function translateOwn(){
   const german=$('own-german').value.trim();if(!german){$('own-form-status').textContent=t('Gib zuerst das deutsche Wort ein.');$('own-german').focus();return;}
@@ -969,13 +1014,44 @@ async function translateOwn(){
   }catch(error){if(token!==translationToken)return;$('own-form-status').textContent=t('Die Online-Übersetzung ist gerade nicht verfügbar. Du kannst die ukrainische Übersetzung selbst eintragen oder es später erneut versuchen.');showOwnResult();}
   finally{clearTimeout(timer);if(token===translationToken){$('translate-own').disabled=false;$('translate-own').textContent=t(learnsGerman()?'Додати німецький переклад':'Ukrainisch ergänzen');translationController=null;}}
 }
+function showQuickSaved(word,partnerResult){
+  quickEditId=word.id;$('quick-own-input').value='';$('quick-own-edit').hidden=false;
+  const pair=learnsGerman()?word.ukrainisch+' → '+word.deutsch:word.deutsch+' → '+word.ukrainisch;
+  const message=learnsGerman()?pair+' · у списку «Ще потренуватися».':pair+' · unter „Noch üben“.';
+  const extra=partnerResult==='added'?(learnsGerman()?' Також у списку для партнера.':' Auch für die Partnerliste vorgemerkt.'):partnerResult==='full'?(learnsGerman()?' Список для партнера вже містить 20 слів.':' Die Partnerliste ist bereits voll.'):partnerResult==='exists'?(learnsGerman()?' Уже є у списку для партнера.':' Bereits in der Partnerliste.'):'';$('quick-own-status').textContent=message+extra;
+}
+function cancelQuickOwn(){quickOwnToken++;quickOwnController?.abort();quickOwnController=null;$('quick-own-input').disabled=false;$('quick-own-add').disabled=false;$('quick-own-form').reset();$('quick-own-status').textContent='';$('quick-own-edit').hidden=true;quickEditId=null;}
+function saveQuickWord(de,uk,aussprache,ausspracheDe,forPartner){
+  if(!de||de.length>120||!uk||uk.length>180||!/[А-Яа-яІіЇїЄєҐґ]/u.test(uk))throw new Error('Übersetzung prüfen');
+  let word=state.customWords.find(item=>normalize(item.deutsch)===normalize(de)&&normalize(item.ukrainisch)===normalize(uk));
+  if(!word){word={id:makeWordId(),ukrainisch:uk,deutsch:de,aussprache:aussprache||readingHelp(uk),ausspracheDe:ausspracheDe||'',kategorie:'Für mich',updatedAt:nextChangeTime()};state.customWords.push(word);refreshWords();}
+  recordPractice(word.id);const partnerResult=forPartner?queuePartnerDraft(word):null;saveState();render();showQuickSaved(word,partnerResult);return word;
+}
+async function addQuickOwnWord(){
+  const input=$('quick-own-input'),source=input.value.trim(),shareWanted=$('quick-own-share').checked,status=$('quick-own-status');
+  if(!source)return;if(new TextEncoder().encode(source).length>480){status.textContent=t('Bitte verwende eine kürzere Wendung.');return;}
+  const token=++quickOwnToken,direction=state.settings.direction;quickOwnController?.abort();$('quick-own-add').disabled=true;input.disabled=true;$('quick-own-edit').hidden=true;status.textContent=learnsGerman()?'Знаходимо переклад …':'Übersetzung wird gesucht …';
+  try{
+    const local=localTranslation(source);let de,uk,helpUk='',helpDe='';
+    if(local){de=germanWord(local);uk=local.ukrainisch;helpUk=local.aussprache||readingHelp(uk);helpDe=local.id?.startsWith('custom_')?local.ausspracheDe||'':germanLessons.get(uk)?.help||'';}
+    else{
+      quickOwnController=new AbortController();const controller=quickOwnController,timer=setTimeout(()=>controller.abort(),12000);
+      try{const url=new URL('https://api.mymemory.translated.net/get');url.searchParams.set('q',source);url.searchParams.set('langpair',direction==='uk-de'?'uk|de':'de|uk');const response=await fetch(url.href,{signal:controller.signal,credentials:'omit',referrerPolicy:'no-referrer'});if(!response.ok)throw new Error('Übersetzung nicht erreichbar');const data=await response.json();if(Number(data.responseStatus)!==200||data.quotaFinished)throw new Error('Übersetzung nicht verfügbar');const translated=String(data.responseData?.translatedText||'').replace(/&amp;/g,'&').replace(/&#39;|&apos;/g,"'").replace(/&quot;/g,'"').trim();if(direction==='uk-de'){uk=source;de=translated;}else{de=source;uk=translated;}helpUk=readingHelp(uk);if(!de||de.length>120||/[\u0400-\u04ff]/.test(de)||!uk||uk.length>180||!/[А-Яа-яІіЇїЄєҐґ]/u.test(uk))throw new Error('Übersetzung prüfen');}finally{clearTimeout(timer);}
+    }
+    if(token!==quickOwnToken||direction!==state.settings.direction)return;
+    saveQuickWord(de,uk,helpUk,helpDe,shareWanted);
+  }catch{
+    if(token!==quickOwnToken||direction!==state.settings.direction)return;
+    resetOwnForm();$('own-german').value=source;showOwnResult();quickPendingShare=shareWanted;$('own-form-status').textContent=learnsGerman()?'Перевір німецький переклад і збережи слово.':'Bitte ergänze oder prüfe die ukrainische Übersetzung und speichere das Wort.';status.textContent=learnsGerman()?'Переклад треба ввести вручну нижче.':'Bitte trage die Übersetzung unten selbst ein.';$('own-form').scrollIntoView({block:'start'});
+  }finally{if(token===quickOwnToken){$('quick-own-add').disabled=false;input.disabled=false;quickOwnController=null;}}
+}
 function saveOwnWord(){
-  const source=$('own-german').value.trim(),target=$('own-ukrainian').value.trim(),de=learnsGerman()?target:source,uk=learnsGerman()?source:target,help=$('own-pronunciation').value.trim().slice(0,220),previous=state.customWords.find(w=>w.id===editingOwn);
+  const source=$('own-german').value.trim(),target=$('own-ukrainian').value.trim(),de=learnsGerman()?target:source,uk=learnsGerman()?source:target,help=$('own-pronunciation').value.trim().slice(0,220),previous=state.customWords.find(w=>w.id===editingOwn),fromQuick=quickPendingShare!==null,forPartner=quickPendingShare===true;
   if(!de||de.length>120||!uk||uk.length>180||!/[\u0400-\u04ff]/.test(uk)){ $('own-form-status').textContent=t('Gib ein deutsches Wort und seine ukrainische Übersetzung in kyrillischer Schrift ein.');(!source||learnsGerman()&&!/[\u0400-\u04ff]/.test(uk)?$('own-german'):$('own-ukrainian')).focus();return;}
-  const duplicate=state.customWords.find(w=>w.id!==editingOwn&&normalize(w.deutsch)===normalize(de)&&normalize(w.ukrainisch)===normalize(uk));if(duplicate){$('own-form-status').textContent=t('Dieses Wort steht schon in deiner eigenen Liste.');return;}
+  const duplicate=state.customWords.find(w=>w.id!==editingOwn&&normalize(w.deutsch)===normalize(de)&&normalize(w.ukrainisch)===normalize(uk));if(duplicate){if(fromQuick){recordPractice(duplicate.id);const partnerResult=forPartner?queuePartnerDraft(duplicate):null;saveState();resetOwnForm();render();showQuickSaved(duplicate,partnerResult);return;}$('own-form-status').textContent=t('Dieses Wort steht schon in deiner eigenen Liste.');return;}
   const word={id:editingOwn||makeWordId(),ukrainisch:uk,deutsch:de,aussprache:learnsGerman()?previous?.aussprache||readingHelp(uk):help||readingHelp(uk),ausspracheDe:learnsGerman()?help:previous?.ausspracheDe||'',kategorie:'Für mich',updatedAt:nextChangeTime(previous?.updatedAt,state.deleted.customWords[editingOwn])};
   const index=state.customWords.findIndex(w=>w.id===editingOwn);if(index<0)state.customWords.push(word);else state.customWords[index]=word;
-  refreshWords();saveState();resetOwnForm();render();toast(index<0?'In deine eigene Liste aufgenommen.':'Dein eigenes Wort wurde aktualisiert.');
+  refreshWords();if(fromQuick)recordPractice(word.id);const partnerResult=forPartner?queuePartnerDraft(word):null;saveState();resetOwnForm();render();if(fromQuick)showQuickSaved(word,partnerResult);else toast(index<0?'In deine eigene Liste aufgenommen.':'Dein eigenes Wort wurde aktualisiert.');
 }
 function editOwnWord(id){const word=state.customWords.find(w=>w.id===id);if(!word)return;resetOwnForm();editingOwn=id;switchTab('own');$('own-german').value=learnsGerman()?word.ukrainisch:word.deutsch;showOwnResult(learnsGerman()?word.deutsch:word.ukrainisch,wordHelp(word));$('save-own').textContent=t('Änderungen speichern');$('own-form-status').textContent=t('Du kannst Übersetzung und Aussprachehilfe bearbeiten.');$('own-form').scrollIntoView({block:'start'});}
 function deleteOwnWord(){if(!editingOwn)return;const id=editingOwn,old=state.customWords.find(w=>w.id===id);state.deleted.customWords[id]=nextChangeTime(old?.updatedAt,state.deleted.customWords[id]);state.customWords=state.customWords.filter(w=>w.id!==id);state.favorites=state.favorites.filter(value=>value!==id);delete state.favoriteUpdated[id];delete state.learned[id];delete state.reverse.learned[id];delete state.practice[id];delete state.reverse.practice[id];refreshWords();saveState();resetOwnForm();render();toast('Dein eigenes Wort wurde entfernt.');}
@@ -998,7 +1074,7 @@ function mergeStates(local,incoming){
 }
 
 function finishImport(merge){
-  if(!pendingImport)return;applyState(merge?mergeStates(state,pendingImport):pendingImport);pendingImport=null;revealed.clear();review=null;gameSession=null;storeGameSession();resetOwnForm();ensureDay();saveState();render();$('settings-dialog').close();$('transfer-notice').hidden=true;clearIncomingQR();toast(merge?'Beide Lernstände wurden zusammengeführt.':'Der Lernstand wurde vollständig übernommen.');
+  if(!pendingImport)return;cancelQuickOwn();applyState(merge?mergeStates(state,pendingImport):pendingImport);pendingImport=null;revealed.clear();review=null;gameSession=null;storeGameSession();resetOwnForm();ensureDay();saveState();render();$('settings-dialog').close();$('transfer-notice').hidden=true;clearIncomingQR();toast(merge?'Beide Lernstände wurden zusammengeführt.':'Der Lernstand wurde vollständig übernommen.');
 }
 
 // QR-Encoder: Byte-Modus, Version 1–20, Fehlerkorrektur L; vollständig lokal.
@@ -1135,6 +1211,7 @@ async function copyTransferLink(){if(!qrTransfer)return;try{if(!navigator.clipbo
 
 
 $('learning-direction').addEventListener('change',event=>changeDirection(event.target.value));$('swap-direction').addEventListener('click',()=>changeDirection(learnsGerman()?'de-uk':'uk-de'));
+$('theme-toggle').addEventListener('click',()=>applyTheme(themeMode==='dark'?'light':'dark',true));
 
 $('game-open').addEventListener('click',()=>{renderGame();openDialog('game-dialog');});
 $('game-create').addEventListener('click',()=>{const bytes=new Uint8Array(6);if(window.crypto?.getRandomValues)window.crypto.getRandomValues(bytes);else for(let i=0;i<bytes.length;i++)bytes[i]=Math.floor(Math.random()*256);const mode=$('game-mode').value==='duel'?'D':'T',pool=$('game-pool').value==='all'?'S':'A',code=mode+pool+Array.from(bytes,value=>GAME_ALPHABET[value%GAME_ALPHABET.length]).join('');$('game-setup-status').textContent='';newGameSession(gameSpec(code));});
@@ -1211,6 +1288,8 @@ $('tab-today').addEventListener('click',()=>switchTab('today'));
 $('tab-all').addEventListener('click',()=>switchTab('all'));
 $('tab-saved').addEventListener('click',()=>switchTab('saved'));
 $('tab-own').addEventListener('click',()=>switchTab('own'));
+$('quick-own-form').addEventListener('submit',event=>{event.preventDefault();addQuickOwnWord();});
+$('quick-own-edit').addEventListener('click',()=>{if(quickEditId)editOwnWord(quickEditId);});
 $('own-form').addEventListener('submit',event=>{event.preventDefault();translateOwn();});
 $('own-form').addEventListener('keydown',event=>{if(event.key==='Enter'&&['own-ukrainian','own-pronunciation'].includes(event.target.id)){event.preventDefault();saveOwnWord();}});
 $('own-german').addEventListener('input',()=>{translationToken++;translationController?.abort();$('translate-own').disabled=false;$('translate-own').textContent=t(learnsGerman()?'Додати німецький переклад':'Ukrainisch ergänzen');$('own-form-status').textContent=t('');if(!editingOwn)$('own-result').hidden=true;});
@@ -1254,16 +1333,17 @@ $('confirm-import').addEventListener('click',()=>finishImport(false));
 $('merge-import').addEventListener('click',()=>finishImport(true));
 $('reset-start').addEventListener('click',()=>{$('reset-confirm').hidden=false;$('import-confirm').hidden=true;pendingImport=null;$('cancel-reset').focus();});
 $('cancel-reset').addEventListener('click',()=>{$('reset-confirm').hidden=true;$('reset-start').focus();});
-$('confirm-reset').addEventListener('click',()=>{stopSpeech();applyState(freshState());resetOwnForm();revealed.clear();review=null;gameSession=null;storeGameSession();duelData=duelFresh();duelView='setup';shareState=shareFresh();try{localStorage.removeItem(DUEL_KEY+'-G');localStorage.removeItem(DUEL_KEY+'-U');localStorage.removeItem(SHARE_KEY+'-G');localStorage.removeItem(SHARE_KEY+'-U');}catch{}clearIncomingQR();$('transfer-notice').hidden=true;saveState();render();$('settings-dialog').close();toast('Ein frischer Anfang. Deine ersten fünf Wörter sind bereit.');});
+$('confirm-reset').addEventListener('click',()=>{stopSpeech();cancelQuickOwn();applyState(freshState());resetOwnForm();revealed.clear();review=null;gameSession=null;storeGameSession();duelData=duelFresh();duelView='setup';shareState=shareFresh();try{localStorage.removeItem(DUEL_KEY+'-G');localStorage.removeItem(DUEL_KEY+'-U');localStorage.removeItem(SHARE_KEY+'-G');localStorage.removeItem(SHARE_KEY+'-U');}catch{}clearIncomingQR();$('transfer-notice').hidden=true;saveState();render();$('settings-dialog').close();toast('Ein frischer Anfang. Deine ersten fünf Wörter sind bereit.');});
 if(speechAvailable())window.speechSynthesis.addEventListener('voiceschanged',updateVoiceStatus);
 window.addEventListener('focus',()=>{if(ensureDay())render();});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){if(ensureDay())render();}else stopSpeech();});
 // Auch eine offen gelassene App wechselt nach Mitternacht zur neuen Tageslektion.
 setInterval(()=>{if(document.visibilityState==='visible'&&ensureDay())render();},30000);
 // Änderungen durch einen zweiten Tab desselben Browsers übernehmen.
-window.addEventListener('storage',event=>{if(event.key!==STORAGE_KEY)return;try{const oldDirection=state.settings.direction;applyState(event.newValue?cleanState(JSON.parse(event.newValue)):freshState());if(oldDirection!==state.settings.direction){resetOwnForm();gameSession=null;storeGameSession();duelData=duelLoad();duelView='setup';shareState=shareLoad();if($('game-dialog').open)$('game-dialog').close();if($('duel-dialog').open)$('duel-dialog').close();if($('share-dialog').open)$('share-dialog').close();}revealed.clear();stopSpeech();if($('review-dialog').open)$('review-dialog').close();if($('mini-dialog').open)$('mini-dialog').close();review=null;mini=null;render();updateVoiceStatus();}catch{toast('Der Lernstand aus dem anderen Tab konnte nicht gelesen werden.');}});
+window.addEventListener('storage',event=>{if(event.key!==STORAGE_KEY)return;try{const oldDirection=state.settings.direction;applyState(event.newValue?cleanState(JSON.parse(event.newValue)):freshState());if(oldDirection!==state.settings.direction){cancelQuickOwn();resetOwnForm();gameSession=null;storeGameSession();duelData=duelLoad();duelView='setup';shareState=shareLoad();if($('game-dialog').open)$('game-dialog').close();if($('duel-dialog').open)$('duel-dialog').close();if($('share-dialog').open)$('share-dialog').close();}revealed.clear();stopSpeech();if($('review-dialog').open)$('review-dialog').close();if($('mini-dialog').open)$('mini-dialog').close();review=null;mini=null;render();updateVoiceStatus();}catch{toast('Der Lernstand aus dem anderen Tab konnte nicht gelesen werden.');}});
 window.addEventListener('storage',event=>{if(event.key!==duelStorageKey())return;duelData=duelLoad();duelView=duelData.incoming?.phase||'setup';if($('duel-dialog').open)renderDuel();});
 window.addEventListener('storage',event=>{if(event.key!==shareStorageKey())return;shareState=shareLoad();if($('share-dialog').open)renderShare();});
+window.addEventListener('storage',event=>{if(event.key===THEME_KEY)applyTheme(event.newValue==='dark'?'dark':'light');});
 captureStaticUI();render();updateVoiceStatus();
 const receivedTransfer=loadIncomingQR();if(receivedTransfer)showIncomingProgress(receivedTransfer);receiveFromLocation();
 </script>
